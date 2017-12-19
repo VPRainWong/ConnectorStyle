@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.changeconnectorplugin"
+		name="Change Connector"
+		description="Change Connector"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.changeconnectorplugin.ChangeConnectorPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.changeconnectorplugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.changeconnectorplugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.changeconnectorplugin.actionset1.ChangeConnectorPluginAction"
+					actionType="generalAction"
+      		name="Change Connector"
+		      description="Change Connector"
+					style="normal"
+          icon="icon/icon.png"
+          tooltip="Change Connector"
+					toolbarPath="com.vp.plugin.sample.changeconnectorplugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.changeconnectorplugin.actions.ChangeConnectorPluginActionControl"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
